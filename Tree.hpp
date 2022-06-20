@@ -6,7 +6,8 @@
 
 class Tree:public Plant {
 public:
-	Tree():Plant("Tree", 10){ }
+	Tree():Plant("Tree", 10) {
+	}
 	Harvest::uPoiner harvest() {
 		decreaseHarvest();
 		return std::make_unique<Fruit>();
